@@ -20,6 +20,7 @@ func main() {
 import (
 	"flag"
 	"fmt"
+	"os"
 )
 
 const VERSION = "%s"
@@ -30,6 +31,7 @@ func init() {
 	flag.Parse()
 	if *versionFlag {
 		fmt.Println(VERSION)
+		os.Exit(0)
 	}
 }
 `, string(version))),
