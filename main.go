@@ -27,7 +27,7 @@ const VERSION = "%s"
 
 var versionFlag = flag.Bool("version", false, "prints version number")
 
-func init() {
+func printVersion() {
 	flag.Parse()
 	if *versionFlag {
 		fmt.Println(VERSION)
